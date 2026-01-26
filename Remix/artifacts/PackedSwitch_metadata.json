@@ -1,0 +1,102 @@
+{
+	"compiler": {
+		"version": "0.8.31+commit.fd3a2265"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"name": "sysConfig",
+				"outputs": [
+					{
+						"internalType": "uint64",
+						"name": "startTime",
+						"type": "uint64"
+					},
+					{
+						"internalType": "uint64",
+						"name": "endTime",
+						"type": "uint64"
+					},
+					{
+						"internalType": "uint8",
+						"name": "mode",
+						"type": "uint8"
+					},
+					{
+						"internalType": "bool",
+						"name": "isActive",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint64",
+						"name": "_startTime",
+						"type": "uint64"
+					},
+					{
+						"internalType": "uint64",
+						"name": "_endTime",
+						"type": "uint64"
+					},
+					{
+						"internalType": "uint8",
+						"name": "_mode",
+						"type": "uint8"
+					},
+					{
+						"internalType": "bool",
+						"name": "_isActive",
+						"type": "bool"
+					}
+				],
+				"name": "updateConfig",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"Day8_Bitmap.sol": "PackedSwitch"
+		},
+		"evmVersion": "osaka",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"Day8_Bitmap.sol": {
+			"keccak256": "0xe4b75f2982e320d88cde0aaa405465ebc6033eca2d4bd76ec8be5e9c1c8c6380",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://7d1af0cdf7d26c0a817b8688e969a9af49d5231a4c3c4d720082f907cb1dc45b",
+				"dweb:/ipfs/Qmd71Ju2SDbkXjJtnaAfj7FiERmZ3gQXpBue2BvK86RYL4"
+			]
+		}
+	},
+	"version": 1
+}

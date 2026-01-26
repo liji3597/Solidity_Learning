@@ -1,0 +1,73 @@
+{
+	"compiler": {
+		"version": "0.8.31+commit.fd3a2265"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"name": "counter",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "foreverLoop",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "normalAdd",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"Day2_GasLoop.sol": "GasTest"
+		},
+		"evmVersion": "osaka",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"Day2_GasLoop.sol": {
+			"keccak256": "0xe3cd672a8ac17dc8a487e28d47ddb95101528648e6706a25d426f41f41b2f66b",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://086372aa13a92a5b6b6dc5e354a5c1fd8bf6c5ea9b1a3bcc0121c3574f14f052",
+				"dweb:/ipfs/QmQKAY34G8v1nu2afNe7FBtEMNkoJChEWDC6ZTcfUKRqCs"
+			]
+		}
+	},
+	"version": 1
+}

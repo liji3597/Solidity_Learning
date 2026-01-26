@@ -1,0 +1,77 @@
+{
+	"compiler": {
+		"version": "0.8.31+commit.fd3a2265"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"stateMutability": "payable",
+				"type": "constructor"
+			},
+			{
+				"inputs": [],
+				"name": "owner",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_recipient",
+						"type": "address"
+					}
+				],
+				"name": "withdrawAll",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"Remix/Day13_Phishing.sol": "Phishable"
+		},
+		"evmVersion": "osaka",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"Remix/Day13_Phishing.sol": {
+			"keccak256": "0x0a0d361fda0b10835a27bb6fccc67bd78558eca38cb1d6dfb227a92c84092dca",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://827d664ce8d779a42e74024090f3433bc360495ec0a3167368abc4ff4b06414d",
+				"dweb:/ipfs/QmZxxouF4t2H24U4WENdvJxjQqMV6KYBHznVJ3qoeXVPBm"
+			]
+		}
+	},
+	"version": 1
+}

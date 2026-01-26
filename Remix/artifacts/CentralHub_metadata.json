@@ -1,0 +1,84 @@
+{
+	"compiler": {
+		"version": "0.8.31+commit.fd3a2265"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "contract ISensor[]",
+						"name": "_sensors",
+						"type": "address[]"
+					}
+				],
+				"name": "readAll",
+				"outputs": [
+					{
+						"internalType": "uint256[]",
+						"name": "",
+						"type": "uint256[]"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "contract ISensor",
+						"name": "_sensorAddress",
+						"type": "address"
+					}
+				],
+				"name": "readSensor",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"Day10_Interface.sol": "CentralHub"
+		},
+		"evmVersion": "osaka",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"Day10_Interface.sol": {
+			"keccak256": "0x22e63800109adc0e7cd1eb3c6ab8fecf0bb589fcbc1e9899a6d7061038ab3d33",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://3403f9876f6b52ae5ebcb878dc39154500c99654393403c070e98343bd5013c3",
+				"dweb:/ipfs/QmYUg3fF44Nr1QHRuwkxeryuY4cKTWkf388JgNrLqDSTaY"
+			]
+		}
+	},
+	"version": 1
+}

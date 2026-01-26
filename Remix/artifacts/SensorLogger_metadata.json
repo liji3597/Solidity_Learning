@@ -1,0 +1,117 @@
+{
+	"compiler": {
+		"version": "0.8.31+commit.fd3a2265"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_deviceId",
+						"type": "uint256"
+					}
+				],
+				"name": "getTemperature",
+				"outputs": [
+					{
+						"internalType": "uint16",
+						"name": "",
+						"type": "uint16"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "sensors",
+				"outputs": [
+					{
+						"internalType": "uint8",
+						"name": "id",
+						"type": "uint8"
+					},
+					{
+						"internalType": "uint16",
+						"name": "temperature",
+						"type": "uint16"
+					},
+					{
+						"internalType": "uint32",
+						"name": "timestamp",
+						"type": "uint32"
+					},
+					{
+						"internalType": "bool",
+						"name": "isValid",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_deviceId",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint16",
+						"name": "_temp",
+						"type": "uint16"
+					}
+				],
+				"name": "updateData",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"Day_3.sensor.sol": "SensorLogger"
+		},
+		"evmVersion": "osaka",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"Day_3.sensor.sol": {
+			"keccak256": "0xf32d327a60c3302fd3b21296c10b7d306698d8eb346518251f75dc22726dee35",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://ee818d17ce0084de5c063e1be54cdd2ade57c11955510e699627b684c903d90f",
+				"dweb:/ipfs/QmYhjse1UEhScXndwH6iMtcmHRkZX72j1Cj7Adp455wF7i"
+			]
+		}
+	},
+	"version": 1
+}
