@@ -1,23 +1,33 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.0;
 
-contract StringUtils {
-    // TODO: 实现字符串拼接
-    function concat(string memory a, string memory b)
-        public
-        pure
-        returns (string memory)
-    {
+contract BytesUtils {
+    bytes public data;
+
+    // TODO: 添加多个字节
+    function appendBytes(bytes memory newData) public {
         // 你的代码
+        data = bytes.concat(data, newData);
     }
 
-    // TODO: 判断字符串是否为空
-    function isEmpty(string memory str) public pure returns (bool) {
+    // TODO: 清空数组
+    function clear() public {
         // 你的代码
+        delete data;
     }
 
-    // TODO: 获取字符串长度
-    function length(string memory str) public pure returns (uint) {
+    // TODO: 反转字节数组
+    function reverse() public {
         // 你的代码
+        uint length = data.length;
+
+        for(uint  i=0; i < length/2; i++)
+        {
+            bytes1 temp = data[i];
+
+            data[i] = data[length - 1 - i];
+
+            data[length - 1 - i] = temp;
+        }
     }
 }

@@ -96,10 +96,11 @@
 	},
 	"sources": {
 		"Remix/practice9.sol": {
-			"keccak256": "0x701d4a0871102f37f04e51ebb0fa159e486e1987858f012f4b837e45e1b84661",
+			"keccak256": "0xa33751c28a83fd356f059b363ec4c00554f03afb0dd41cc661b729c47330e85b",
+			"license": "MIT",
 			"urls": [
-				"bzz-raw://43544c8182059cf1d72e2b8e1142e2d4cdcb32582722628ca5dfea9e40af15fa",
-				"dweb:/ipfs/QmZS8M9jYHRmtWaeHS9v3ShTNgtWkM6dvHdNLLRjVoov1C"
+				"bzz-raw://d8b7cf539ec224da7f1e3a78d4b728aa37fa80f65aaa54f1863a5e24b8512940",
+				"dweb:/ipfs/QmW6rKr5G4M91HhSjUCA7i8SYnTjBrTjXsP5twT8Jds6F4"
 			]
 		}
 	},
