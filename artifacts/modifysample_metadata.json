@@ -1,0 +1,66 @@
+{
+	"compiler": {
+		"version": "0.8.31+commit.fd3a2265"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"name": "get_a",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "test1",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"Remix/practice11.sol": "modifysample"
+		},
+		"evmVersion": "osaka",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"Remix/practice11.sol": {
+			"keccak256": "0x6acce470a4e5d3c11ed3a0ca9e4fa01048118de268d04deb37247841909efd3b",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://5dc44480a8a59136fc978a2355260765b05c7dcfdd5c335305291759fb1a1d53",
+				"dweb:/ipfs/QmTJ7Ab6Pt7V4awaTGSf7UWCLimZ2k3nEciSy9FDcL6Pb2"
+			]
+		}
+	},
+	"version": 1
+}
