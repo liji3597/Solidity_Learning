@@ -6,23 +6,21 @@
 	"output": {
 		"abi": [
 			{
-				"inputs": [
+				"inputs": [],
+				"name": "count",
+				"outputs": [
 					{
-						"internalType": "address",
-						"name": "_implementation",
-						"type": "address"
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
 					}
 				],
-				"stateMutability": "nonpayable",
-				"type": "constructor"
-			},
-			{
-				"stateMutability": "payable",
-				"type": "fallback"
+				"stateMutability": "view",
+				"type": "function"
 			},
 			{
 				"inputs": [],
-				"name": "count",
+				"name": "getCount",
 				"outputs": [
 					{
 						"internalType": "uint256",
@@ -47,21 +45,11 @@
 				"type": "function"
 			},
 			{
-				"inputs": [
-					{
-						"internalType": "address",
-						"name": "newImplementation",
-						"type": "address"
-					}
-				],
-				"name": "upgrade",
+				"inputs": [],
+				"name": "increment",
 				"outputs": [],
 				"stateMutability": "nonpayable",
 				"type": "function"
-			},
-			{
-				"stateMutability": "payable",
-				"type": "receive"
 			}
 		],
 		"devdoc": {
@@ -77,7 +65,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"Remix/代理合约.sol": "Proxy"
+			"Remix/代理合约.sol": "Logic"
 		},
 		"evmVersion": "osaka",
 		"libraries": {},
@@ -92,11 +80,11 @@
 	},
 	"sources": {
 		"Remix/代理合约.sol": {
-			"keccak256": "0x50f0af07684db489f7666d8f52ca10ec25e284522853c8b825f2625679391178",
+			"keccak256": "0xadfaa5df4c70e00a81759d513a16856dcd970e28030645de4dc65997ffdbff80",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://f8c8fe70be3e827479fbc4c24dbec1476961c905c4e12f8915683956c750d433",
-				"dweb:/ipfs/QmTabiGwdcjvUQuB7z3XgQ4G1vs2iM7jdZm55uoqjvmFq1"
+				"bzz-raw://9754a0ada08f1b5dbb5e5cd9559291af7fa07a6c131033e0499eb7b546646384",
+				"dweb:/ipfs/QmXUoiaauTMe67N1V4UpBdDBc8FNmjg8sAidec9TohFunN"
 			]
 		}
 	},

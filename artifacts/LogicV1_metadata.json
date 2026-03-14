@@ -6,23 +6,21 @@
 	"output": {
 		"abi": [
 			{
-				"inputs": [
+				"inputs": [],
+				"name": "count",
+				"outputs": [
 					{
-						"internalType": "address",
-						"name": "_implementation",
-						"type": "address"
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
 					}
 				],
-				"stateMutability": "nonpayable",
-				"type": "constructor"
-			},
-			{
-				"stateMutability": "payable",
-				"type": "fallback"
+				"stateMutability": "view",
+				"type": "function"
 			},
 			{
 				"inputs": [],
-				"name": "count",
+				"name": "getCount",
 				"outputs": [
 					{
 						"internalType": "uint256",
@@ -47,21 +45,11 @@
 				"type": "function"
 			},
 			{
-				"inputs": [
-					{
-						"internalType": "address",
-						"name": "newImplementation",
-						"type": "address"
-					}
-				],
-				"name": "upgrade",
+				"inputs": [],
+				"name": "increment",
 				"outputs": [],
 				"stateMutability": "nonpayable",
 				"type": "function"
-			},
-			{
-				"stateMutability": "payable",
-				"type": "receive"
 			}
 		],
 		"devdoc": {
@@ -77,7 +65,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"Remix/代理合约.sol": "Proxy"
+			"Remix/代理合约.sol": "LogicV1"
 		},
 		"evmVersion": "osaka",
 		"libraries": {},
