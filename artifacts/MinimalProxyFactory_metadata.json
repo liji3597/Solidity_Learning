@@ -1,0 +1,84 @@
+{
+	"compiler": {
+		"version": "0.8.34+commit.80d5c536"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_implementationContract",
+						"type": "address"
+					}
+				],
+				"name": "deployClone",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "proxies",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"Remix/克隆合约.sol": "MinimalProxyFactory"
+		},
+		"evmVersion": "osaka",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"Remix/克隆合约.sol": {
+			"keccak256": "0x3dac28d07708d3ea684be4c217b74ab8fc7e815c4974ca3934ebe6b055a187a3",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://246d0c54eaf1da56fb40aaa38347e1e2fc058d35a07a8c890a5b14d64bc08c41",
+				"dweb:/ipfs/Qmf3sgVXajQvU28rBMS7S25bYZeAqDdyTZY7tkf5DEnxU6"
+			]
+		}
+	},
+	"version": 1
+}

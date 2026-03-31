@@ -1,0 +1,26 @@
+{
+  "Remix/Day2_GasLoop.sol": {
+    "__sources__": {
+      "Remix/Day2_GasLoop.sol": {
+        "content": "// SPDX-License-Identifier: MIT\r\npragma solidity ^0.8.0;\r\n\r\ncontract GasTest {\r\n    uint256 public counter = 0;\r\n\r\n    // 这是一个会触发看门狗复位（Gas耗尽）的函数\r\n    function foreverLoop() public {\r\n        // while(true) 的区块链版本\r\n        while(true) {\r\n            counter++;\r\n        }\r\n    }\r\n\r\n    // 这是一个正常的函数，对比Gas消耗\r\n    function normalAdd() public {\r\n        counter++;\r\n    }\r\n}",
+        "file": "Remix/Day2_GasLoop.sol"
+      }
+    }
+  },
+  "Remix/Day17_Logger.sol": {
+    "__sources__": {
+      "Remix/Day17_Logger.sol": {
+        "content": "// SPDX-License-Identifier: MIT\r\npragma solidity ^0.8.0;\r\n\r\ncontract BlackBox {\r\n    // 定义两种信号\r\n    // 1. 普通日志 (便宜，不能快速检索)\r\n    event SystemLog(string message);\r\n\r\n    // 2. 关键告警 (带索引，可像 CAN ID 一样过滤)\r\n    // indexed 允许我们按 errorCode 或 deviceId 快速筛选\r\n    event ErrorOccurred(uint256 indexed errorCode, uint256 indexed deviceId, string message);\r\n\r\n    // 模拟系统运行\r\n    function runDiagnostics(uint256 _deviceId) public {\r\n        emit SystemLog(\"Start diagnostics...\");\r\n        \r\n        // 模拟产生一些数据\r\n        if (_deviceId % 2 == 0) {\r\n            emit ErrorOccurred(404, _deviceId, \"Sensor not found\");\r\n        } else {\r\n            emit SystemLog(\"Device OK\");\r\n        }\r\n        \r\n        emit ErrorOccurred(500, _deviceId, \"Voltage unstable\");\r\n    }\r\n}",
+        "file": "Remix/Day17_Logger.sol"
+      }
+    }
+  },
+  "Remix/克隆合约.sol": {
+    "__sources__": {
+      "Remix/克隆合约.sol": {
+        "content": "// SPDX-License-Identifier: MIT\r\npragma solidity ^0.8.0;\r\n\r\ncontract ImplementationContract {\r\n    // ⚠️ 这里把 private 改成了 public，否则最后一步你无法查询它的状态\r\n    bool public isInitialized;      \r\n\r\n    function initializer() external {              \r\n        require(!isInitialized, \"Already initialized\");\r\n        isInitialized = true;     \r\n    }          \r\n}\r\n\r\ncontract MinimalProxyFactory {\r\n    address[] public proxies;\r\n\r\n    function deployClone(address _implementationContract) external returns (address) {\r\n        bytes20 implementationContractInBytes = bytes20(_implementationContract);\r\n        address proxy;\r\n        \r\n        assembly {\r\n            let clone := mload(0x40)\r\n            mstore(clone, 0x3d602d80600a3d3981f3363d3d373d3d3d363d73000000000000000000000000)\r\n            mstore(add(clone, 0x14), implementationContractInBytes)\r\n            mstore(\r\n                add(clone, 0x28),\r\n                0x5af43d82803e903d91602b57fd5bf30000000000000000000000000000000000\r\n            )\r\n            proxy := create(0, clone, 0x37)\r\n        }\r\n        \r\n        ImplementationContract(proxy).initializer();\r\n        proxies.push(proxy);\r\n        return proxy;\r\n    }\r\n}",
+        "file": "Remix/克隆合约.sol"
+      }
+    }
+  }
+}
